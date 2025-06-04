@@ -56,8 +56,8 @@
   --blurred-white: #ffffff59;
   --untitled-ui--primary800\<deleted\|variable-ddf4f85f\>: #53389e;
   --white\<deleted\|variable-06180cc9\>: var(--untitled-ui--white\<deleted\|variable-e3beb9c1\>);
-  --dark-blue: #5e95cf;
   --ultra-light-grey: #f1f1f1;
+  --dark-blue: #5e95cf;
   --extra-light-green: #ecfdf3;
   --untitled-ui--primary50\<deleted\|variable-a4451441\>: #f9f5ff;
   --baby-purple-blurred: #6779ff33;
@@ -1299,7 +1299,6 @@
 .uui-navbar03_dropdown-link-list {
   grid-column-gap: 0px;
   grid-row-gap: .5rem;
-  border: 1px solid var(--dark-blue);
   border-radius: .5rem;
   grid-template: "." max-content
                  "." max-content
