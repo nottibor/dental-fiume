@@ -1,40 +1,7 @@
-@font-face {
-  font-family: Ubuntu Local;
-  src: url('../fonts/Ubuntu-BoldItalic.ttf') format("truetype"), url('../fonts/Ubuntu-Bold.ttf') format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Ubuntu Local;
-  src: url('../fonts/Ubuntu-Italic.ttf') format("truetype"), url('../fonts/Ubuntu-Regular.ttf') format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Ubuntu Local;
-  src: url('../fonts/Ubuntu-MediumItalic.ttf') format("truetype"), url('../fonts/Ubuntu-Medium.ttf') format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Ubuntu Local;
-  src: url('../fonts/Ubuntu-LightItalic.ttf') format("truetype"), url('../fonts/Ubuntu-Light.ttf') format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --purple: #313e9c;
-  --bright-blue-mariner: #385ed5;
-  --light-grey: #e6e6e6;
   --white: white;
+  --bright-blue-mariner: #385ed5;
   --purple-blurred: #313e9c26;
   --seethrough: #fff0;
   --baby-blue: #cee4fa;
@@ -52,6 +19,7 @@
   --untitled-ui--success50\<deleted\|variable-9177f7a8\>: #ecfdf3;
   --dark-green: #0f945c;
   --untitled-ui--gray500\<deleted\|variable-68f29e84\>: #667085;
+  --light-grey: #e6e6e6;
   --dark-grey: #344054;
   --blurred-white: #ffffff59;
   --untitled-ui--primary800\<deleted\|variable-ddf4f85f\>: #53389e;
@@ -332,9 +300,8 @@
 .button-primary {
   grid-column-gap: .5rem;
   grid-row-gap: .5rem;
-  border: 1px solid var(--bright-blue-mariner);
+  border: 1px solid var(--purple);
   background-color: var(--purple);
-  box-shadow: inset 0 0 4px 0 var(--light-grey), 0 0 0 0 #0000, 0 .1px .2px 0 #0000001a, 0 .9px 1.9px 0 #0000001d;
   color: var(--white);
   text-align: center;
   letter-spacing: normal;
@@ -344,7 +311,7 @@
   align-items: center;
   max-width: 812rem;
   padding: 1rem;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1rem;
@@ -390,7 +357,7 @@
   grid-auto-columns: 1fr;
   place-items: center;
   padding: 10px 8px 8px;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-weight: 700;
   display: grid;
 }
@@ -404,7 +371,7 @@
 
 .body {
   background-color: var(--baby-blue);
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
 }
 
 .top-navbar-secion-information {
@@ -968,15 +935,15 @@
   border-radius: .5rem;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  padding: .75rem;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
   text-decoration: none;
   transition: all .3s;
   display: block;
-  box-shadow: 0 2px 5px #0003, 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .button-secondary:hover {
@@ -1027,6 +994,7 @@
 .button-secondary.see-through-style.services-button-smaller-style {
   text-transform: none;
   padding: .5rem;
+  font-family: Nunito, sans-serif;
   font-weight: 500;
 }
 
@@ -1128,7 +1096,7 @@
 .uui-text-size-medium {
   color: var(--lighter-grey);
   letter-spacing: normal;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -1565,6 +1533,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
 }
 
@@ -1662,7 +1631,7 @@
 .uui-layout38_logo-row {
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
-  border: .3rem solid var(--bright-blue-mariner);
+  border: .2rem solid var(--bright-blue-mariner);
   border-radius: 1rem;
   flex-wrap: wrap;
   justify-content: center;
@@ -1686,7 +1655,7 @@
   letter-spacing: normal;
   margin-left: auto;
   margin-right: auto;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1731,6 +1700,7 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  font-family: Nunito, sans-serif;
 }
 
 .uui-heading-subheading {
@@ -1802,7 +1772,7 @@
   letter-spacing: normal;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.5;
@@ -1813,7 +1783,12 @@
   font-size: 1.8rem;
 }
 
-.uui-heading-xxsmall.a-bit-larger-heating, .uui-heading-xxsmall.a-bit-larger-heating-copy {
+.uui-heading-xxsmall.a-bit-larger-heating {
+  font-family: Nunito, sans-serif;
+  font-size: 2rem;
+}
+
+.uui-heading-xxsmall.a-bit-larger-heating-copy {
   font-size: 2rem;
 }
 
@@ -1865,6 +1840,10 @@
   line-height: 1.2;
 }
 
+.uui-heading-large.weekly-live-text-extra-height.green {
+  font-family: Nunito, sans-serif;
+}
+
 .uui-heading-large.white {
   background-color: var(--blurred-white);
   border-radius: 2rem;
@@ -1873,16 +1852,15 @@
 }
 
 .uui-container-small {
+  background-color: var(--blurred-white);
   border-radius: 2rem;
   width: 100%;
   max-width: 48rem;
   margin: 6rem auto 4rem;
-  padding: .5rem;
+  padding: 2rem;
 }
 
 .weekly-live-consults {
-  border: .3rem solid var(--purple);
-  background-color: var(--blurred-white);
   margin-top: 0;
 }
 
@@ -2020,7 +1998,7 @@
 .uui-field-label {
   color: var(--purple);
   margin-bottom: .5rem;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: .875rem;
   font-weight: 500;
   line-height: 1.5;
@@ -2247,7 +2225,7 @@
 
 .rl_footer1_legal-link {
   color: var(--baby-blue);
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2272,7 +2250,7 @@
 
 .rl_footer1_credit-text {
   color: var(--baby-blue);
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: .875rem;
   font-weight: 300;
 }
@@ -2301,6 +2279,7 @@
 
 .rl_footer1_link-text {
   color: var(--white);
+  font-family: Nunito, sans-serif;
 }
 
 .rl_footer1_social-icon {
@@ -2333,7 +2312,7 @@
   color: var(--white);
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.5;
@@ -2355,7 +2334,7 @@
   color: var(--white);
   padding-top: .5rem;
   padding-bottom: .5rem;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3464,7 +3443,7 @@
 .uui-form-checkbox-label-2 {
   color: var(--purple);
   margin-bottom: 0;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -3525,7 +3504,7 @@
   min-height: 2.75rem;
   margin-bottom: 0;
   padding: .5rem .875rem;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   transition: all .3s;
@@ -3555,7 +3534,7 @@
 .uui-field-label-2 {
   color: var(--purple);
   margin-bottom: .5rem;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -3598,7 +3577,7 @@
   color: var(--purple);
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.3;
@@ -3698,7 +3677,7 @@
 
 .body-4 {
   background-color: var(--baby-blue);
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
 }
 
@@ -3856,13 +3835,14 @@
 .uui-text-size-xlarge-3 {
   color: var(--purple);
   -webkit-text-stroke-color: var(--bright-blue-mariner);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
 .uui-text-size-xlarge-3.white-text {
   color: var(--baby-blue);
+  font-family: Nunito, sans-serif;
 }
 
 .uui-text-size-xlarge-3.grey-tech {
@@ -3891,6 +3871,7 @@
 
 .uui-heading-xlarge-2.white-text {
   color: var(--baby-blue);
+  font-family: Nunito, sans-serif;
   font-size: 3rem;
 }
 
@@ -4708,7 +4689,7 @@
 
 .uui-heading-xxsmall-3.text-weight-medium {
   color: var(--lighter-grey);
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5113,6 +5094,7 @@
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   align-items: stretch;
+  min-height: 350px;
   margin-left: 4rem;
   margin-right: 4rem;
   display: grid;
@@ -6643,6 +6625,7 @@
 
 .body-11 {
   background-color: var(--baby-blue);
+  font-family: Nunito, sans-serif;
 }
 
 .uui-button-10 {
@@ -7014,7 +6997,7 @@
 .uui-text-size-small-4 {
   color: var(--lighter-grey);
   letter-spacing: normal;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: .875rem;
   line-height: 1.5;
 }
@@ -7022,7 +7005,7 @@
 .uui-testimonial13_client-heading {
   color: var(--dark-grey);
   letter-spacing: normal;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -8935,6 +8918,7 @@
 
 .uui-heading-xxsmall-6.text-weight-medium {
   color: var(--lighter-grey);
+  font-family: Nunito, sans-serif;
   font-weight: 500;
 }
 
@@ -9238,6 +9222,7 @@
 
 .body-16 {
   background-color: var(--baby-blue);
+  font-family: Nunito, sans-serif;
 }
 
 .uui-icon-1x1-xxsmall-4 {
@@ -9684,7 +9669,7 @@
   max-width: 740px;
   margin-top: 0;
   margin-bottom: 36px;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 2.8rem;
   font-weight: 700;
   line-height: 120%;
@@ -9713,7 +9698,7 @@
   color: var(--purple);
   max-width: 294px;
   margin-bottom: 0;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 165%;
@@ -9752,7 +9737,7 @@
   color: var(--purple);
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 128%;
@@ -9913,7 +9898,7 @@
   letter-spacing: normal;
   margin-left: auto;
   margin-right: auto;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -9929,6 +9914,7 @@
 
 .uui-text-size-xlarge-6.white-text {
   color: #cee4fa;
+  font-family: Nunito, sans-serif;
 }
 
 .list-services-page-2 {
@@ -9943,28 +9929,28 @@
 .button-primary-2 {
   grid-column-gap: .5rem;
   grid-row-gap: .5rem;
+  border: 1px solid var(--purple);
   color: #fff;
   text-align: center;
   letter-spacing: normal;
   text-transform: uppercase;
   background-color: #313e9c;
-  border: 1px solid #385ed5;
   border-radius: .5rem;
   justify-content: center;
   align-items: center;
   max-width: 812rem;
   padding: 1rem;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1rem;
   text-decoration: none;
   transition: all .2s;
   display: flex;
-  box-shadow: inset 0 0 4px #e6e6e6, 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .button-primary-2:hover {
+  border-color: var(--bright-blue-mariner);
   color: #fff;
   letter-spacing: normal;
   background-color: #385ed5;
@@ -10106,6 +10092,7 @@
 
 .uui-heading-xlarge-5.white-text {
   color: #cee4fa;
+  font-family: Nunito, sans-serif;
   font-size: 3rem;
 }
 
@@ -10132,7 +10119,7 @@
   letter-spacing: normal;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.5;
@@ -10273,6 +10260,7 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  font-family: Nunito, sans-serif;
 }
 
 .padding-global-7 {
@@ -10415,6 +10403,7 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  font-family: Nunito, sans-serif;
 }
 
 .list-services-page-7 {
@@ -10457,6 +10446,7 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  font-family: Nunito, sans-serif;
 }
 
 .list-services-page-8 {
@@ -10499,6 +10489,7 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  font-family: Nunito, sans-serif;
 }
 
 .list-services-page-9 {
@@ -10685,6 +10676,7 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  font-family: Nunito, sans-serif;
 }
 
 .list-services-page-14 {
@@ -10738,6 +10730,7 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  font-family: Nunito, sans-serif;
 }
 
 .column-19 {
@@ -10848,6 +10841,7 @@
 
 .button-secondary-2.smaller.small-letters {
   text-transform: none;
+  font-family: Nunito, sans-serif;
 }
 
 .invisalign {
@@ -10873,6 +10867,374 @@
 
 .background-video-4 {
   z-index: 1;
+}
+
+.locale-2 {
+  color: #313e9c;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.locale-2:hover {
+  color: #475467;
+}
+
+.text-dropdown-menu-sub {
+  color: #1d1d1d;
+  font-weight: 400;
+}
+
+.uui-badge-small-success-5 {
+  grid-column-gap: .25rem;
+  color: #0f945c;
+  white-space: nowrap;
+  mix-blend-mode: multiply;
+  background-color: #ecfdf3bf;
+  border: 1px solid #0f945c;
+  border-radius: 1rem;
+  align-items: center;
+  padding: .125rem .5rem;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-size: .7rem;
+  font-weight: 400;
+  display: flex;
+}
+
+.navbar11_menu {
+  align-items: center;
+  display: flex;
+  position: static;
+}
+
+.navbar11_logo-link {
+  padding-left: 0;
+}
+
+.navbar11_dropdown-link {
+  grid-column-gap: .75rem;
+  grid-row-gap: 0px;
+  border-radius: .5rem;
+  grid-template-rows: auto;
+  grid-template-columns: max-content 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+}
+
+.navbar11_dropdown-link:hover {
+  background-color: #313e9c1a;
+}
+
+.navbar11_link {
+  color: #313e9c;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+}
+
+.navbar11_link:hover {
+  background-color: #313e9c0d;
+}
+
+.dropdown-chevron {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+}
+
+.navbar11_container {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.button-primary-3 {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  color: #fff;
+  text-align: center;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  background-color: #313e9c;
+  border: 1px solid #313e9c;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 812rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  text-decoration: none;
+  transition: all .2s;
+  display: flex;
+}
+
+.button-primary-3:hover {
+  color: #fff;
+  letter-spacing: normal;
+  background-color: #385ed5;
+  border-color: #385ed5;
+}
+
+.button-primary-3:active {
+  color: #313e9c;
+  background-color: #313e9c1a;
+  border-color: #313e9c1a;
+}
+
+.navbar11_component {
+  background-color: #0000;
+  border-bottom-style: solid;
+  border-bottom-width: 0;
+  align-items: center;
+  width: 100%;
+  min-height: 5rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: Nunito, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+}
+
+.language-dropdown-lis-2.w--open {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: #ffffffa6;
+  border: 1px #000;
+  border-bottom: .1rem #313e9c;
+  border-radius: .5rem;
+  margin-top: .5rem;
+  padding: 10px 5px;
+}
+
+.navbar11_dropdown-link-list {
+  grid-column-gap: 0px;
+  grid-row-gap: 1rem;
+  grid-template-rows: max-content;
+  grid-template-columns: 1fr;
+  grid-auto-rows: max-content;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.navigation-button-2 {
+  color: #313e9c;
+  border-radius: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.75rem 2.5rem 1.75rem 1rem;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .3s;
+  display: flex;
+}
+
+.navigation-button-2:hover {
+  color: #475467;
+}
+
+.navigation-button-2.language-switcher {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffffff59;
+  border-radius: .5rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  font-weight: 700;
+  transition: all .3s cubic-bezier(.55, .085, .68, .53);
+  display: flex;
+  position: static;
+}
+
+.navigation-button-2.language-switcher:hover {
+  color: #313e9c;
+  background-color: #fff;
+}
+
+.navigation-button-2.language-switcher.w--open {
+  margin-right: auto;
+}
+
+.link-3 {
+  color: #313e9c;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.link-3:hover {
+  color: #475467;
+}
+
+.link-3.w--current {
+  color: #0f945c;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+
+.link-3.w--current:hover {
+  color: #475467;
+}
+
+.navbar11_dropdown-list.w--open {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background-color: #ffffffa6;
+  border-radius: 1rem;
+  width: 20rem;
+  padding: 1rem;
+}
+
+.navbar11_menu-button {
+  padding: 0;
+}
+
+.navbar11_text-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.navbar11_dropdown-toggle {
+  grid-column-gap: .5rem;
+  color: #313e9c;
+  border-radius: .5rem;
+  align-items: center;
+  padding: .5rem 1rem;
+  display: flex;
+}
+
+.navbar11_dropdown-toggle:hover {
+  background-color: #313e9c0d;
+}
+
+.navbar11_menu-buttons {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  margin-left: 1rem;
+  display: flex;
+}
+
+.button-secondary-3 {
+  grid-column-gap: .5rem;
+  color: #313e9c;
+  text-align: center;
+  -webkit-text-stroke-color: #344054;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #fff;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  padding: .75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all .3s;
+  display: block;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
+}
+
+.button-secondary-3:hover {
+  color: #fff;
+  background-color: #313e9c;
+}
+
+.button-secondary-3:focus {
+  color: #fff;
+  background-color: #313e9c;
+  box-shadow: 0 1px 2px #1018280d;
+}
+
+.padding-section-large-21 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.padding-section-large-21.bottom-0 {
+  padding-top: 4rem;
+  padding-bottom: 0;
+}
+
+.hero-header-video {
+  border-radius: 8rem 8rem 0 0;
+}
+
+.text-size-medium-12 {
+  margin-bottom: 40px;
+  font-size: 1.125rem;
+}
+
+.header26_image-wrapper {
+  overflow: hidden;
+}
+
+.button-group-8 {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+
+.button-group-8.is-center {
+  justify-content: center;
+}
+
+.uui-text-size-xsmall {
+  color: #313e9c;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.heading-style-h1-2 {
+  margin-bottom: 40px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.padding-global-9 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.header26_component {
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-hero-header {
+  color: #313e9c;
 }
 
 @media screen and (max-width: 991px) {
@@ -12170,6 +12532,174 @@
 
   .heading-style-h2-2 {
     font-size: 2.75rem;
+  }
+
+  .menu-icon1_line-middle {
+    background-color: #313e9c;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-bottom: 0;
+    padding-right: 0;
+    display: flex;
+  }
+
+  .menu-icon1 {
+    -webkit-backdrop-filter: blur(13px);
+    backdrop-filter: blur(13px);
+    background-color: #ffffff59;
+    border-radius: .5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-right: -.5rem;
+    padding-bottom: 0;
+    padding-right: 0;
+    display: flex;
+  }
+
+  .navbar11_menu {
+    -webkit-text-fill-color: inherit;
+    background-clip: border-box;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 1rem 5% 2rem;
+    position: absolute;
+    overflow: auto;
+  }
+
+  .navbar11_menu.is-page-height-tablet {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: #ffffffa6;
+    border-radius: 1rem;
+    height: 100dvh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 6.5rem;
+    transition: height .5s;
+  }
+
+  .menu-icon1_line-bottom {
+    background-color: #313e9c;
+    width: 24px;
+    height: 2px;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .navbar11_link {
+    width: auto;
+    padding: .75rem .25rem;
+    font-size: 1.125rem;
+  }
+
+  .dropdown-chevron {
+    inset: auto 0% auto auto;
+  }
+
+  .menu-icon1_line-top {
+    background-color: #313e9c;
+    width: 24px;
+    height: 2px;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .navbar11_dropdown-link-list {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .navigation-button-2 {
+    align-items: center;
+    margin-left: auto;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: 0;
+    font-size: 1.125rem;
+    display: flex;
+  }
+
+  .navigation-button-2:hover {
+    color: #101828;
+  }
+
+  .navigation-button-2.language-switcher {
+    flex-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 4px #e6e6e6;
+  }
+
+  .link-3, .link-3.w--current {
+    font-size: 1.1rem;
+  }
+
+  .navbar11_dropdown-list {
+    position: static;
+    overflow: hidden;
+  }
+
+  .navbar11_dropdown-list.w--open {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: #fff0;
+    border-style: none;
+    width: auto;
+    padding: 0;
+  }
+
+  .navbar11_dropdown-toggle {
+    align-items: center;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: .25rem;
+    display: flex;
+  }
+
+  .menu-icon1_line-middle-inner {
+    width: 4px;
+    height: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .navbar11_menu-buttons {
+    flex-direction: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    margin-top: 1.5rem;
+    margin-left: 0;
+  }
+
+  .navbar11_menu-dropdown {
+    border-radius: .5rem;
+    width: 100%;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-right: .25rem;
+    font-size: 1.125rem;
+  }
+
+  .padding-section-large-21 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .hero-header-video {
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+  }
+
+  .heading-style-h1-2 {
+    font-size: 3.25rem;
   }
 }
 
@@ -14424,6 +14954,57 @@
     color: #344054;
     background-color: #fff;
   }
+
+  .uui-badge-small-success-5 {
+    padding: .125rem .5rem;
+  }
+
+  .navbar11_menu.is-page-height-tablet {
+    padding-bottom: 6rem;
+  }
+
+  .navbar11_dropdown-link {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .navbar11_component {
+    min-height: 4rem;
+  }
+
+  .navbar11_dropdown-link-list {
+    grid-row-gap: .5rem;
+    max-width: none;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .navigation-button-2 {
+    font-size: 1rem;
+  }
+
+  .button-secondary-3 {
+    padding-left: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .button-secondary-3:hover {
+    color: #344054;
+    background-color: #fff;
+  }
+
+  .padding-section-large-21 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .text-size-medium-12 {
+    font-size: 1rem;
+  }
+
+  .heading-style-h1-2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -15056,6 +15637,19 @@
   .cta1_content {
     grid-template-columns: 1fr;
   }
+
+  .navbar11_dropdown-link {
+    padding-left: 0;
+  }
+
+  .navigation-button-2.language-switcher.w--open {
+    margin-left: auto;
+  }
+
+  .hero-header-video {
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+  }
 }
 
 #w-node-f6eb9183-9e26-ecdb-c69b-951363660de8-461bca62, #w-node-f1a3c970-4683-fae3-326b-9d0c3fdc87bd-461bca62, #w-node-ea176eab-16e6-f1ff-d888-5d3e0a4dc066-0a4dc05d, #Contact-1-Checkbox.w-node-c16313d8-5c8b-5af1-8ec2-24d76b36f3c4-6b36f3a9, #w-node-c16313d8-5c8b-5af1-8ec2-24d76b36f3cb-6b36f3a9 {
@@ -15066,7 +15660,7 @@
   justify-self: center;
 }
 
-#w-node-bb7d296a-ed3f-1161-6e03-bbf0dd4c1fc0-dd4c1faf, #w-node-_57680831-056e-4af2-ca3b-fc145e41e249-dd4c1faf, #w-node-_46b35bd3-5d8d-762d-bf28-036c0135523b-dd4c1faf {
+#w-node-_2bf8682f-328a-aeaa-f8e8-847b164e7caa-164e7ca8, #w-node-bb7d296a-ed3f-1161-6e03-bbf0dd4c1fc0-dd4c1faf, #w-node-_57680831-056e-4af2-ca3b-fc145e41e249-dd4c1faf, #w-node-_46b35bd3-5d8d-762d-bf28-036c0135523b-dd4c1faf {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
@@ -15074,7 +15668,7 @@
   grid-area: Area;
 }
 
-#w-node-bb7d296a-ed3f-1161-6e03-bbf0dd4c1fe9-dd4c1faf, #w-node-_0931150a-c354-1766-b1dd-085e5d178b49-dd4c1faf, #w-node-a2a68cb2-c18d-30f5-52a4-6dac32583e15-dd4c1faf, #w-node-_2d3a047c-2f01-7b00-3bdf-f85c808047b9-dd4c1faf, #w-node-_9e528bab-8b54-3093-965a-54fe592d8e97-dd4c1faf, #w-node-bb7d296a-ed3f-1161-6e03-bbf0dd4c2064-dd4c1faf, #w-node-_2bf8682f-328a-aeaa-f8e8-847b164e7caa-164e7ca8 {
+#w-node-bb7d296a-ed3f-1161-6e03-bbf0dd4c1fe9-dd4c1faf, #w-node-_0931150a-c354-1766-b1dd-085e5d178b49-dd4c1faf, #w-node-a2a68cb2-c18d-30f5-52a4-6dac32583e15-dd4c1faf, #w-node-_2d3a047c-2f01-7b00-3bdf-f85c808047b9-dd4c1faf, #w-node-_9e528bab-8b54-3093-965a-54fe592d8e97-dd4c1faf, #w-node-bb7d296a-ed3f-1161-6e03-bbf0dd4c2064-dd4c1faf {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
@@ -15154,31 +15748,3 @@
 }
 
 
-@font-face {
-  font-family: 'Ubuntu Local';
-  src: url('../fonts/Ubuntu-BoldItalic.ttf') format('truetype'), url('../fonts/Ubuntu-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Ubuntu Local';
-  src: url('../fonts/Ubuntu-Italic.ttf') format('truetype'), url('../fonts/Ubuntu-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Ubuntu Local';
-  src: url('../fonts/Ubuntu-MediumItalic.ttf') format('truetype'), url('../fonts/Ubuntu-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Ubuntu Local';
-  src: url('../fonts/Ubuntu-LightItalic.ttf') format('truetype'), url('../fonts/Ubuntu-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
